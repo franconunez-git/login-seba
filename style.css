@@ -38,6 +38,7 @@ form{
 
 .cont-input{
 	margin: 10px 0px;
+	width: 100%;
 }
 
 #cont-img{
@@ -56,4 +57,5 @@ input{
 
 label{
 	white-space: nowrap;
+	width: 100%;
 }
