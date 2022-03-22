@@ -1,8 +1,12 @@
-body{
+html, body{
 	margin: 0px;
 	padding: 0px;
 	height: 100vh;
 	width: 100vw;
+	font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    font-size: 16px;
 	background-color: rgb(91, 21, 204);
 }
 
@@ -15,6 +19,7 @@ body{
 }
 
 #container{
+	display: flex;
 	width: 60%;
 	height: 50%;
 	background-color: rgb(230, 17, 81);
@@ -22,8 +27,9 @@ body{
 }
 
 #cont-form{
-	width: 40%;
+	
 	padding-left: 10%;
+	padding-right: 10%;
 }
 
 form{
@@ -31,31 +37,89 @@ form{
 	height: 100%;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
+	justify-content: space-evenly;
 	align-items: center;
 	flex-wrap: wrap;
 }
 
 .cont-input{
-	margin: 10px 0px;
 	width: 100%;
+	max-width: 600px;
 }
 
 #cont-img{
+	visibility: hidden;
 	padding-right: 10%;
 }
 
 input{
 	border-radius: 20px;
 	border-color: white;
-	color: white;
+	color: black;
 	box-shadow: none;
 	border-style: solid;
 	height: 40px;
 	width: 100%;
+	font-family: 'Quicksand';
 }
 
 label{
 	white-space: nowrap;
 	width: 100%;
+	color: white;
+}
+
+button{
+	font-family: 'Quicksand';
+	width: 100%;
+	height: 40px;
+	border-radius: 20px;
+	box-shadow: none;
+	border-style: none;
+	background-color: rgb(53, 2, 238);
+	color: white;
+}
+
+button:hover{
+	background-color: white;
+	color: rgb(53, 2, 238);
+}
+
+input::placeholder{
+	padding-left: 15px;
+}
+
+@media screen and (min-width: 1000px) {
+    #cont-img {
+        visibility: visible;
+        border-radius: 0 20px 20px 0;
+        width: 40%;
+        height: 100%;
+        background-image: url('https://cdn141.picsart.com/309256231011211.png?type=webp&to=min&r=640');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+	}
+
+	#conteiner {
+			display: flex;
+			width: 60%;
+			background: #FF0054;
+			height: 50%;
+			flex-direction: row;
+			border-radius: 20px;
+			box-shadow: 0px 0px 26px -5px rgba(0,0,0,0.62);
+		}
+	
+	.cont-input{
+		width: 100%;
+	}
+
+	form{
+		width: 100%;
+	}
+
+	#cont-form{
+		width:50%;
+	}
 }
